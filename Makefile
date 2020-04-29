@@ -1,4 +1,4 @@
-hello: hello.o
-	gcc -o hello hello.o -no-pie
-hello.o: hello.asm
-	nasm -f elf64 -g -F dwarf hello.asm -l hello.lst
+main: main.o
+	gcc -o main main.o -no-pie
+main.o: main.asm
+	nasm -f elf64 -g -F dwarf main.asm -l machine_code.lst
